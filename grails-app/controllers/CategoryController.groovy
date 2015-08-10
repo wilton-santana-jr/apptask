@@ -7,7 +7,7 @@ import java.util.*;
 import Category;
 
 
-//Controlador responsavel por gerenciar as categorias de tarefas do usuario do sistema
+//Controlador  responsavel por gerenciar as categorias de tarefas do usuario do sistema
 @Transactional(readOnly = true)
 class CategoryController {
         
