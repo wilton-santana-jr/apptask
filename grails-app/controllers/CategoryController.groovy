@@ -7,19 +7,19 @@ import java.util.*;
 import Category;
 
 
-
+//Controlador responsavel por gerenciar as categorias de tarefas do usuario do sistema
 @Transactional(readOnly = true)
 class CategoryController {
         
     
     def index() {        
                
-        def categoryInstanceIn = Category.get(params.idCategory);
+         def categoryInstanceIn = Category.get(params.idCategory);
                     
-        params.sort="name"
-        params.order="asc"        
+         params.sort="name"
+         params.order="asc"        
          
-        respond Category.list(params), model:[categoryInstanceIn: categoryInstanceIn]    
+         respond Category.list(params), model:[categoryInstanceIn: categoryInstanceIn]    
     }
     
     
